@@ -1,0 +1,83 @@
+Name: Vikram Dudee
+
+Course: CS441G
+
+Assignment: Program F, Milestones C&D
+
+Updates to provided files:
+
+1. Ran patch for getnum on pstcode.cc so far but have not made myTests yet.
+2. Added assign statement in getnum() implementation within pstcode.cc
+3. Added if-then, if-then-else, for-loop(2 expressions, 1 statement),
+for-loop (with 3 expressions, 1 statement), and repeat-until functionalities.
+
+
+Execution:
+
+bnfc -m -cpp new.cf
+make
+make -f Makefile.codegen
+./Testnew aaaa.zp
+./compiler aaaa.zp bbb.apm
+./pstack/api bbb
+
+
+Added features:
+
+1. getnum() with variable assignment;
+2. Can interpret and translate if-then control structure
+3. Can interpret and translate if-then-else control structure
+4. Can interpret and translate simple for-loop control structure
+5. Can interpret and translate for-loop that allows internal variable
+   instantiation control structure.
+6. Can interpret and translate repeat-until control structure.
+7. Global Variables
+
+Bugs, not implemented features:
+
+Real-world application/practicality:
+
+Tasks similar to this programming assignment are important in the real
+world when a programming languange gets an update and added features.
+The old compiler(s) for the programming language would need to be updated
+so they can interpet the added functionalities of the starting language
+so that they can successfully translate them to end language. The
+translation in this case was from the Z-plus language to p-code.
+
+
+
+Files and Directories included:
+
+Absyn.C
+Absyn.H
+codegen.cc
+codegen.h
+compiler
+compiler2017
+Lexer.C
+main.cc
+Makefile
+Makefile.codegen
+myREADME (this)
+new.cf
+new.l
+new.y
+Parser.C
+Parser.H
+patch-getnum.diff (not sure if necessary since applied but just in case)
+Printer.C
+Printer.H
+pstack
+pstcode.cc
+pstcode.h
+simple.zp
+Skeleton.C
+Skeleton.H
+symbtable.cc
+symbtable.h
+Test.C
+Testnew
+test-zp2pstack-modified.sh
+zp.cf
+zp.l
+zp.y (old .cf, .l, .y files for reference)
